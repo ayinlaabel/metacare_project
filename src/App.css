@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/gelion');
+
 .app {
   display: grid;
   grid-template-columns: [nav-start] 262px [nav-end main-start] 1fr [main-end];
