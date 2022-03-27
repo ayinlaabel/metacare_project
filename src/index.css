@@ -10,3 +10,15 @@ body {
 code {
   font-family: 'Gelion', sans-serif;                                             
 }
+
+@font-face {
+  font-family: "Gelion";
+  src: local("Gelion"),
+    url(./fonts/gelion/Gelion-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Gelion";
+  font-weight: 500;
+  src: local("Gelion"), url(./fonts/gelion/Gelion-Bold.ttf) format("truetype");
+}
