@@ -1,8 +1,17 @@
 @import url("http://fonts.cdnfonts.com/css/gelion");
 
-* {
-  font-family: "Gelion", sans-serif;
+@font-face {
+  font-family: "Gelion";
+  src: local("Gelion"),
+    url(./fonts/gelion/Gelion-Regular.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: "Gelion";
+  font-weight: 500;
+  src: local("Gelion"), url(./fonts/gelion/Gelion-Bold.ttf) format("truetype");
+}
+
 .app {
   display: grid;
   grid-template-columns: [nav-start] 262px [nav-end main-start] 1fr [main-end];
