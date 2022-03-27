@@ -1,5 +1,8 @@
-@import url('http://fonts.cdnfonts.com/css/gelion');
+@import url("http://fonts.cdnfonts.com/css/gelion");
 
+* {
+  font-family: "Gelion", sans-serif;
+}
 .app {
   display: grid;
   grid-template-columns: [nav-start] 262px [nav-end main-start] 1fr [main-end];
@@ -13,10 +16,10 @@
 
 .nav {
   grid-column: nav-start / nav-end;
-  border-right: 1px solid #ECEBF5;
+  border-right: 1px solid #ecebf5;
 }
 
-.main{
+.main {
   grid-column: main-start / main-end;
   overflow-x: hidden;
   width: 100%;
