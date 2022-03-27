@@ -1,0 +1,292 @@
+.header {
+  height: 245px;
+  /* width: 100%; */
+  /* overflow: hidden; */
+  position: fixed;
+  left: 264px;
+  z-index: 99999999999;
+  background: #fff;
+}
+
+/***
+    ****** HEAD TOP
+***/
+.header__top {
+  height: 78px;
+  width: 100%;
+  border-bottom: 1px solid #ecebf5;
+}
+
+/***
+    ****** TOP NAV
+***/
+.top__nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  padding: 12px 10px 12px 40px;
+}
+
+.border__bottom {
+  border-top: 1px solid #ecebf5;
+}
+
+/* .search {
+    
+  flex: 1;
+
+} */
+
+.search__box {
+  position: relative;
+  width: 441px;
+  height: 54px;
+  background: #fafafc;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.search__box input {
+  background: transparent;
+  border: none;
+  margin-left: 16px;
+  height: 47px;
+  width: 380px;
+}
+
+.user {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 112px;
+  margin-left: 400px;
+}
+
+.user__box {
+  position: relative;
+  width: 175px;
+  height: 54px;
+  display: flex;
+  border-radius: 8px;
+  border: 1px solid #ecebf5;
+}
+
+.user__box::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 24px;
+  width: 1px;
+  transform: translate(-50%, -50%);
+  background: #ecebf5;
+}
+
+.notification {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile {
+  flex: 1;
+}
+
+.profile__box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #6837ef;
+}
+
+.profile__box > i {
+  margin-left: 10px;
+}
+
+.notification__icon,
+.notification__counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter__container {
+  height: 16px;
+  width: 16px;
+  background: #f25a68;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search__box input:focus {
+  outline: none;
+}
+
+.search__box .icon {
+  position: absolute;
+  right: 16px;
+}
+
+/***
+    ****** NAV BAR
+***/
+
+.navigation {
+  width: 100%;
+  height: 57px;
+  border-bottom: 1px solid #ecebf5;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.nav__listing,
+.nav__item,
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #696d8c;
+}
+
+.nav__item {
+  position: relative;
+}
+
+.nav__item:not(:first-child) {
+  margin-left: 37px;
+}
+
+.nav__item.active,
+.nav__item.active a {
+  font-weight: 500;
+  color: #060213;
+}
+
+.nav__item.active::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #6837ef;
+}
+
+/***
+    ***** DASHBOARD
+***/
+
+.dashboard__header {
+  width: 100%;
+  height: 109px;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.dashboard__search {
+    width: 330px;
+    height: 44px;
+    border-radius: 8px;
+    border: 1px solid #e1e1eb;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.dashboard__search-box{
+  display: flex;
+  align-items: center;
+}
+
+.dashboard__search-box .icon {
+  margin: 18px 18px;
+  align-items: center;
+}
+.dashboard__search-box input {
+  width: 250px;
+  height: 16px;
+  font-size: 16px;
+  color: #a3a3c2;
+  background: transparent;
+  border: none;
+}
+
+.dashboard__search-box input:focus {
+  outline: none;
+}
+
+.fe{
+    display: flex;
+    position: relative;
+    flex: 1;
+    align-items: center;
+}
+
+.fe::after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 30px;
+    width: 2px;
+    background: #ECEBF5;
+}
+
+.filter{
+    height: 44px;
+    width: 160px;
+    border-radius: 8px;
+    border: 1px solid #E1E1EB;
+    margin-left: 24px;
+}
+
+.filter select{
+    font-size: 16px;
+    font-weight: 500;
+    width: 150px;
+    height: 100%;
+    border: none;
+    padding: 0px 6px;
+    margin: 0px 0px 0px 6px;
+
+}
+
+.filter select:focus{
+   outline: none;
+
+}
+
+
+.button{
+    text-align: center;
+    width: 105px;
+    border-radius: 8px;
+    background: #25BB87;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    color: #fff;
+    font-weight: 500;
+    padding: 12px 0;
+    margin-left: 32px;
+}
